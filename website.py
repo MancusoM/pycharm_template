@@ -5,11 +5,11 @@ st.title('Elizabeth Sarah McNaughton')
 
 container = st.container()
 
-(container.write('my description of her'))
+(container.write("Lizzy, everyday I see you, that's my pockful of happiness for that day"))
 
 Memories, Inside_Jokes = st.tabs(["Memories", "Inside Jokes"])
 
-with Memories:
+with (Memories):
 
     col1, col2, col3 = st.columns(3)
 
@@ -22,9 +22,6 @@ with Memories:
                  width=200)
         st.image('F6DCB01B-6F34-481A-B0C6-3728D14769A3_1_105_c.jpeg', caption="Pre Bryant Park",
                  width=200)
-        #need to replace
-        st.image('FCF4B0DE-756C-4597-922C-80C18319C316_1_105_c.jpeg', caption="Lizzy's First Appearance on Camera Roll",
-                 width=200)
 
         st.image('B34A68A1-6706-4CB9-87E2-FD24CE011B27_1_105_c.jpeg', caption ='Lizzy somehow smiling after learning '
                                                                                'about the oddities of Kaleb')
@@ -32,6 +29,9 @@ with Memories:
                  width=200)
         st.image('3286420A-551D-41F8-95BB-809008615974.jpeg', caption="First Dinner With Familia",
                  width=200)
+
+        st.image('IMG_7749.jpeg', caption= 'Is She Beauty or is She Beast? '
+        'Answer:Both', width = 200)
     with col2:
 
         st.image('D1D508D3-1F08-46E4-A27D-873474688308_1_105_c.jpeg', caption="Beating Lizzy At Chess. Thankfully, She Didn't Have My Mom's Reaction!",
@@ -40,15 +40,15 @@ with Memories:
         st.image('E56EF88E-5ECC-4EFC-AEC8-D7ED704D5178_1_105_c.jpeg', caption="I LOVE KNOCKING ON DOORS",
                  width=200)
 
-        st.image('0A9E7DFA-BD3E-456F-AE8D-1B37ECFE30C8_1_105_c.jpeg', caption="Brooklyn Time",
-                 width=200)
-
         st.image('A727011D-E97E-467A-AE42-B8D67EC36502_1_102_o.jpeg', caption ='Lizzy Carrying At Hot To Go',
                  width =200)
         st.image('7125D8A4-05A6-476D-8177-3CD0DD36AA91.jpeg', caption ='Hard at Work. Or Hardly Working', width = 200)
 
         st.image('A9BDCCFF-D743-4911-91DB-43E8C661FE05_1_105_c.jpeg', caption="Costco Date!",
                  width=200)
+
+        st.image('EEE8A07D-4A00-4FAE-AB61-69213AE417E0_1_105_c.jpeg', caption ='String Bean Waiting For Monkey',
+        width= 200)
     with col3:
         st.image('0A9E7DFA-BD3E-456F-AE8D-1B37ECFE30C8_1_105_c.jpeg', caption="An Unwarranted Middle Figer (GO IU!)",
                  width=200)
@@ -66,7 +66,7 @@ with Memories:
 
         st.image('49567F8A-1040-45B9-A590-EFD3E3B1D295_1_105_c.jpeg', caption="The Best View Wasn't the WTC. It was right next to Matt",
              width=200)
-        st.image('74049FE1-D2AE-4E11-B12F-FA11B4CA8B92_1_105_c.jpeg', caption="One of my Favorite Photos",
+        st.image('74049FE1-D2AE-4E11-B12F-FA11B4CA8B92_1_105_c.jpeg', caption="Halloween Night",
                  width=200)
 
 with Inside_Jokes:
