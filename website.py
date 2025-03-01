@@ -60,6 +60,21 @@ with Memories:
             caption="Is She Beauty or is She Beast? " "Answer:Both",
             width=200,
         )
+        st.image(
+            'burger.jpeg',
+            caption="Lizzy's Alwaays A Happy Girl When She Has A Burger",
+            width = 200
+        )
+        st.image(
+            'coffee.jpeg',
+            caption = 'NYC Coffee Date Pre NYC Library Date',
+            width =200
+        )
+        st.image(
+            'Purdue.jpeg',
+            caption='Lizzy Bringing Matt to His First Purdue Game',
+            width=200
+        )
 
     with col2:
         st.image(
@@ -95,6 +110,26 @@ with Memories:
             "EEE8A07D-4A00-4FAE-AB61-69213AE417E0_1_105_c.jpeg",
             caption="String Bean Waiting For Monkey",
             width=200,
+        )
+        st.image(
+            'art_show.jpeg',
+            caption= "Lizzy Attending John's Art Show",
+            width = 200
+        )
+        st.image(
+            'diva.jpeg',
+            caption = 'Da Diva',
+            width = 200
+        )
+        st.image(
+            'hangry.jpeg',
+            caption ='Better Feed Lizzy Or She Will Eat You',
+            width = 200
+        )
+        st.image(
+            'middle.jpeg',
+            caption = 'What Did I Do To Deserve This???',
+            width = 200
         )
 
     with col3:
@@ -138,6 +173,21 @@ with Memories:
             caption="Halloween Night",
             width=200,
         )
+        st.image(
+            "angry.jpeg",
+            caption = '😲',
+            width =200
+        )
+        st.image(
+            'snow.jpeg',
+            caption = 'No Good Weather During Our First Vacation? No Problem!',
+            width = 200
+        )
+        st.image(
+            'valentine.jpeg',
+            caption ="A Wonderful Valentine's Day Celebration",
+            width = 200
+        )
 
 with Inside_Jokes:
     st.header("Unhinged Elizabeth Quotes")
@@ -151,7 +201,12 @@ with Inside_Jokes:
         st.markdown("- That's My Dead Rabbit, Bitches")
         st.markdown("- I'm good at jumping. Its One of My Talents")
         st.markdown("- You Missed the part in Barbie Where they Shoot the CEO")
+        st.markdown("- It’s a fine line between supporting the gays and holiday spirit ")
         st.markdown("- I'm going to go with the bombing of cambodia")
+        st.markdown("- These are the gayest brownies this side of the Mississippi ")
+        st.markdown("- Pack the gun no grabbing buns")
+        st.markdown("- When I want to be in safe feminine space I go to the nfl")
+        st.markdown("- Wart girls lips taste like pepperoni ")
 
     with NSFW_Quotes:
         st.markdown("- I'm really good at going down")
@@ -163,4 +218,26 @@ with Inside_Jokes:
         st.markdown("- (Proudly) Im going to make Jello Penises")
         st.markdown("- I feel like its the Lizzy Dick List (2x)")
         st.markdown("- [Talking about Acme], the dick out discount")
-        st.markdown("- This is good; its helping my cooch")
+        st.markdown("- What do you want to do first: me or the Spinach balls?")
+        st.markdown("- I had to text my grandma so I couldn’t vote cum stain ")
+        st.markdown("- [In front of friends]:  I’m going to stick in my mouth")
+        st.markdown("- Do you have your penis (referred to as little Matt) write python code")
+        st.markdown("- Take it. It has chlamydia on it.")
+        st.markdown("- [impersonating The General from Insurance] I wanna fuck you so bad I’m so hard")
+        st.markdown("- You would want that Steve cohenussy")
+        st.markdown("- I have the dog in the bag with the condoms")
+        st.markdown("- He’s thrusting in reggaeton ")
+        st.markdown("- You can’t talk about penis then go right back to credit cards")
+        st.markdown("- I didn’t take you as a thong guy")
+        st.markdown("- Purdussy")
+        st.markdown("- Imagine your husband acts zesty in a soup porno")
+        st.markdown("- You don’t lactate")
+        st.markdown("- I did not just describe a boner in typescript")
+        st.markdown("- Wait until I describe it in rust. It would be a memory safe function")
+        st.markdown("- Having sex is embedded programming ")
+        st.markdown("- Imagine dating me bc im cute and boom wartboy-ussy")
+        st.markdown("- Wart girls lips taste like pepperoni")
+
+
+
+
