@@ -71,7 +71,7 @@ with Memories:
             width =200
         )
         st.image(
-            'Purdue.jpeg',
+            'purdue.jpeg',
             caption='Lizzy Bringing Matt to His First Purdue Game',
             width=200
         )
