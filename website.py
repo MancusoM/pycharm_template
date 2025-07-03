@@ -10,7 +10,7 @@ container.write(
     "Lizzy, everyday I see you, that's my Pocketful of Happiness for the Day"
 )
 
-Memories, Inside_Jokes = st.tabs(["Memories", "Inside Jokes"])
+Memories, Inside_Jokes,Happy_Birthday = st.tabs(["Memories", "Inside Jokes",'Happy Birthday'])
 
 with Memories:
     col1, col2, col3 = st.columns(3)
@@ -75,6 +75,16 @@ with Memories:
             caption='Lizzy Bringing Matt to His First Purdue Game',
             width=200
         )
+        st.image(
+            'Museum.jpeg',
+            caption='Babys First Whitney Trip',
+            width=200
+        )
+        st.image(
+            'pigeon.jpeg',
+            caption='Do you really live in the tristate area if you havent seen a massive pigeon',
+            width=200
+        )
 
     with col2:
         st.image(
@@ -130,6 +140,16 @@ with Memories:
             'middle.jpeg',
             caption = 'What Did I Do To Deserve This???',
             width = 200
+        )
+        st.image(
+            'playground.jpeg',
+            caption='playground? Playground',
+            width=200
+        )
+        st.image(
+            'purdue.jpeg',
+            caption='Mets Win with Lizzy in attendance: Wizzy',
+            width=200
         )
 
     with col3:
@@ -188,6 +208,21 @@ with Memories:
             caption ="A Wonderful Valentine's Day Celebration",
             width = 200
         )
+        st.image(
+            'zoo.jpeg',
+            caption='Great Day for Lizzys Branding',
+            width=200
+        )
+        st.image(
+            'IMG_2442.jpeg',
+            caption='One Benefit To the Hive: # Of Dogs',
+            width=200
+        )
+        st.image(
+            'IMG_0870.jpeg',
+            caption='Lizzy (left) with Her Spirit Animal',
+            width=200
+        )
 
 with Inside_Jokes:
     st.header("Unhinged Elizabeth Quotes")
@@ -207,6 +242,8 @@ with Inside_Jokes:
         st.markdown("- Pack the gun no grabbing buns")
         st.markdown("- When I want to be in safe feminine space I go to the nfl")
         st.markdown("- Wart girls lips taste like pepperoni ")
+        st.markdown("- You don’t know what a pond is")
+
 
     with NSFW_Quotes:
         st.markdown("- I'm really good at going down")
@@ -237,7 +274,32 @@ with Inside_Jokes:
         st.markdown("- Having sex is embedded programming ")
         st.markdown("- Imagine dating me bc im cute and boom wartboy-ussy")
         st.markdown("- Wart girls lips taste like pepperoni")
+        st.markdown("- They’re all mech engineers. We tell them to fuck up some gears then we go fuck upstairs")
+        st.markdown("- He just stared at my boobs and then emailed the government of Alaska")
+        st.markdown("- My boobs are like bop-it")
+        st.markdown("- I don’t wanna work at Meta. I get mad dick")
+        st.markdown("- I used to like cookies more than sex. Then I started having good sex")
+        st.markdown("- I thought Denmark was made up in Shakespeare")
+        st.markdown("- Reverse cowgirl so I can work on my code")
+        st.markdown("- Can you send nut master to me")
+        st.markdown("- You want that Steve Jobsussy")
+        st.markdown("- You did not do “hot to go” about your erection")
+        st.markdown("- I wonder how much men are going to watch the Minecraft movie instead of getting any modicum of pussy")
+        st.markdown("- It’s a fine line between a boys hangout and public masturbation")
+        st.markdown("- We have black guys")
+        st.markdown("- It’s a Ben & Jerry’s flavor. Orgasm swirl")
+        st.markdown("- Bunny on my boobs")
+        st.markdown("- The gods of my period")
+        st.markdown("- I just want to be licked, topped, and loved")
+        st.markdown("- I need to get the screenshot of the porn book club")
+        st.markdown("- Pinky, turn around. Mommy’s having fun")
+        st.markdown("- What happens if you get pulled into the Spiderverse during sex")
+        st.markdown("- Now that I’ve seen Pete and his voluptuous ass, I'm going to sign up for bare tomorrow")
+        st.markdown("- They were fucking. There are dragons. What more could you want")
+        st.markdown("- Moomoo sex is sex that sponsors the Mets")
 
-
+with Happy_Birthday:
+    st.markdown('Happy Birthday, my darling')
+    st.markdown('https://shorturl.at/Q0gD3')
 
 
