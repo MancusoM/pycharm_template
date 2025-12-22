@@ -1,4 +1,13 @@
 import streamlit as st
+from pathlib import Path
+import os
+import sys
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+
+current_script_path = Path(__file__).resolve()
+image_folder = current_script_path.parent
+print(image_folder)
 
 st.set_page_config(page_icon="❤️", layout="centered", page_title="Merry Christmas")
 
@@ -10,215 +19,224 @@ container.write(
     "Lizzy, everyday I see you, that's my Pocketful of Happiness for the Day"
 )
 
-Memories, Inside_Jokes,Happy_Birthday = st.tabs(["Memories", "Inside Jokes",'Happy Birthday'])
+Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!"])
+
+def display_image(file_path,caption,width = 200):
+    return st.image(f"images/{file_path}",caption,width)
 
 with Memories:
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.image(
-            "FCF4B0DE-756C-4597-922C-80C18319C316_1_105_c.jpeg",
+
+        display_image(
+            file_path= "FCF4B0DE-756C-4597-922C-80C18319C316_1_105_c.jpeg",
+            caption="Lizzy's First Appearance on Camera Roll",
+            width =200,
+        )
+
+        display_image(
+            file_path="D677062A-24CD-42AE-80B2-680571D608CE_1_105_c.jpeg",
             caption="Lizzy's First Appearance on Camera Roll",
             width=200,
         )
-
-        st.image(
+        display_image(
             "D677062A-24CD-42AE-80B2-680571D608CE_1_105_c.jpeg",
             caption="Our First Met Date",
             width=200,
         )
 
-        st.image(
+        display_image(
             "F7102E66-F614-4BEF-B54F-62381E3D17FD_1_105_c.jpeg",
             caption="Lizzy's First Time Meeting My Dad",
             width=200,
         )
 
-        st.image(
+        display_image(
             "F6DCB01B-6F34-481A-B0C6-3728D14769A3_1_105_c.jpeg",
             caption="Pre Bryant Park",
             width=200,
         )
-        st.image(
+        display_image(
             "B34A68A1-6706-4CB9-87E2-FD24CE011B27_1_105_c.jpeg",
             caption="Lizzy somehow smiling after learning "
             "about the oddities of Kaleb",
         )
-        st.image(
+        display_image(
             "A25AEF46-CC8B-4197-9C25-2CC8E4BF75DE_1_105_c.jpeg",
             caption="First of Many Jefferson Coffee Dates",
             width=200,
         )
-        st.image(
+        display_image(
             "3286420A-551D-41F8-95BB-809008615974.jpeg",
             caption="First Dinner With Familia",
             width=200,
         )
 
-        st.image(
+        display_image(
             "IMG_7749.jpeg",
             caption="Is She Beauty or is She Beast? " "Answer:Both",
             width=200,
         )
-        st.image(
+        display_image(
             'burger.jpeg',
             caption="Lizzy's Alwaays A Happy Girl When She Has A Burger",
             width = 200
         )
-        st.image(
+        display_image(
             'coffee.jpeg',
             caption = 'NYC Coffee Date Pre NYC Library Date',
             width =200
         )
-        st.image(
+        display_image(
             'purdue.jpeg',
             caption='Lizzy Bringing Matt to His First Purdue Game',
             width=200
         )
-        st.image(
+        display_image(
             'Museum.jpeg',
             caption='Babys First Whitney Trip',
             width=200
         )
-        st.image(
+        display_image(
             'pigeon.jpeg',
             caption='Do you really live in the tristate area if you havent seen a massive pigeon',
             width=200
         )
 
     with col2:
-        st.image(
+        display_image(
             "D1D508D3-1F08-46E4-A27D-873474688308_1_105_c.jpeg",
             caption="Beating Lizzy At Chess. Thankfully, She Didn't Have My Mom's Reaction!",
             width=200,
         )
 
-        st.image(
+        display_image(
             "E56EF88E-5ECC-4EFC-AEC8-D7ED704D5178_1_105_c.jpeg",
             caption="I LOVE KNOCKING ON DOORS",
             width=200,
         )
 
-        st.image(
+        display_image(
             "A727011D-E97E-467A-AE42-B8D67EC36502_1_102_o.jpeg",
             caption="Lizzy Carrying At Hot To Go",
             width=200,
         )
-        st.image(
+        display_image(
             "7125D8A4-05A6-476D-8177-3CD0DD36AA91.jpeg",
             caption="Hard at Work. Or Hardly Working",
             width=200,
         )
 
-        st.image(
+        display_image(
             "A9BDCCFF-D743-4911-91DB-43E8C661FE05_1_105_c.jpeg",
             caption="Costco Date!",
             width=200,
         )
 
-        st.image(
+        display_image(
             "EEE8A07D-4A00-4FAE-AB61-69213AE417E0_1_105_c.jpeg",
             caption="String Bean Waiting For Monkey",
             width=200,
         )
-        st.image(
+        display_image(
             'art_show.jpeg',
             caption= "Lizzy Attending John's Art Show",
             width = 200
         )
-        st.image(
+        display_image(
             'diva.jpeg',
             caption = 'Da Diva',
             width = 200
         )
-        st.image(
+        display_image(
             'hangry.jpeg',
             caption ='Better Feed Lizzy Or She Will Eat You',
             width = 200
         )
-        st.image(
+        display_image(
             'middle.jpeg',
             caption = 'What Did I Do To Deserve This???',
             width = 200
         )
-        st.image(
+        display_image(
             'playground.jpeg',
             caption='playground? Playground',
             width=200
         )
-        st.image(
+        display_image(
             'purdue.jpeg',
             caption='Mets Win with Lizzy in attendance: Wizzy',
             width=200
         )
 
     with col3:
-        st.image(
+        display_image(
             "0A9E7DFA-BD3E-456F-AE8D-1B37ECFE30C8_1_105_c.jpeg",
             caption="An Unwarranted Middle Figer (GO IU!)",
             width=200,
         )
 
-        st.image(
+        display_image(
             "F9659469-FEF7-43B2-86CA-0897B32D52AD_1_105_c.jpeg",
             caption="I phew up",
             width=200,
         )
 
-        st.image(
+        display_image(
             "7D0C9F30-C53E-43AD-A568-03CD219A93E5_1_105_c.jpeg",
             caption="Our First Ever Concert",
             width=200,
         )
 
-        st.image(
+        display_image(
             "91EA5FB5-DC75-484A-BE9B-B235F2A42868_1_105_c.jpeg",
             caption="Saturday Night In",
             width=200,
         )
 
-        st.image(
+        display_image(
             "840A7B8B-7EFC-41B4-8B7A-8F32C7C5CD4C_1_105_c.jpeg",
             caption="No Women Knew What Was Going On In the Bagel Store",
             width=200,
         )
 
-        st.image(
+        display_image(
             "49567F8A-1040-45B9-A590-EFD3E3B1D295_1_105_c.jpeg",
             caption="The Best View Wasn't the WTC. It was right next to Matt",
             width=200,
         )
-        st.image(
+        display_image(
             "74049FE1-D2AE-4E11-B12F-FA11B4CA8B92_1_105_c.jpeg",
             caption="Halloween Night",
             width=200,
         )
-        st.image(
+        display_image(
             "angry.jpeg",
             caption = '😲',
             width =200
         )
-        st.image(
+        display_image(
             'snow.jpeg',
             caption = 'No Good Weather During Our First Vacation? No Problem!',
             width = 200
         )
-        st.image(
+        display_image(
             'valentine.jpeg',
             caption ="A Wonderful Valentine's Day Celebration",
             width = 200
         )
-        st.image(
+        display_image(
             'zoo.jpeg',
             caption='Great Day for Lizzys Branding',
             width=200
         )
-        st.image(
+        display_image(
             'IMG_2442.jpeg',
             caption='One Benefit To the Hive: # Of Dogs',
             width=200
         )
-        st.image(
+        display_image(
             'IMG_0870.jpeg',
             caption='Lizzy (left) with Her Spirit Animal',
             width=200
@@ -297,9 +315,32 @@ with Inside_Jokes:
         st.markdown("- Now that I’ve seen Pete and his voluptuous ass, I'm going to sign up for bare tomorrow")
         st.markdown("- They were fucking. There are dragons. What more could you want")
         st.markdown("- Moomoo sex is sex that sponsors the Mets")
+        st.markdown("""Your abortion talk convinced me to go to Pilates tomorrow""")
+        st.markdown("""Locksmith roleplay""")
+        st.markdown("""Even bad bitches gotta take a poopy sometime""")
+        st.markdown("""Mozart said. Gobble me swallow me drip down the side of me""")
+        st.markdown("""I’m black""")
+        st.markdown("""Lindor’s bisexual""")
+        st.markdown("""We either need to peg harder or peg smarter""")
+        st.markdown("""Octopus in my pussy?""")
+        st.markdown("""Is the cow in the udder?""")
+        st.markdown("""Can we watch the sensory fruit video before sex""")
+        st.markdown("""There’s nothing less erotic than grilled cheese""")
+        st.markdown("""I can still pretend to be in the Klan if you want""")
+        st.markdown("""I want you to celebrate our anniversary by taking a shit in my toilet""")
+        st.markdown("""I got mad dick when I had LinkedIn premium""")
+        st.markdown("""(Talking about stuffies) I don’t want them to fuck""")
+        st.markdown("""Greater than or equal to you fucking bitch""")
+        st.markdown("""Good. You should be discriminated against""")
+        st.markdown("""I feel like a furry""")
+        st.markdown("""I want to be cumt ruffle’s grandmother""")
+        st.markdown("""I’m going to make Pearl Harbor look like the Boston tea party""")
+        st.markdown("""I’m sound tracking your piss""")
 
 with Happy_Birthday:
     st.markdown('Happy Birthday, my darling')
     st.markdown('https://youtube.com/shorts/FZELFihDJoA?feature=share')
 
-
+with Merry_Xmas:
+    st.markdown('Happy Xmas!')
+    st.markdown('https://www.youtube.com/shorts/8jMfNlA2ukU')
