@@ -21,8 +21,11 @@ container.write(
 
 Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!"])
 
-def display_image(file_path,caption,width = 200):
+def display_image(file_path:str,caption:str,width:int):
     return st.image(f"images/{file_path}",caption,width)
+
+def write_markdown(string:str):
+    return st.markdown(f"- {string}")
 
 with Memories:
     col1, col2, col3 = st.columns(3)
@@ -59,8 +62,8 @@ with Memories:
         )
         display_image(
             "B34A68A1-6706-4CB9-87E2-FD24CE011B27_1_105_c.jpeg",
-            caption="Lizzy somehow smiling after learning "
-            "about the oddities of Kaleb",
+            caption="Lizzy somehow smiling after learning about the oddities of Kaleb",
+            width =200
         )
         display_image(
             "A25AEF46-CC8B-4197-9C25-2CC8E4BF75DE_1_105_c.jpeg",
@@ -100,7 +103,17 @@ with Memories:
         )
         display_image(
             'pigeon.jpeg',
-            caption='Do you really live in the tristate area if you havent seen a massive pigeon',
+            caption="Do you really live in the tristate area if you haven't seen a massive pigeon",
+            width=200
+        )
+        display_image(
+            "mets.jpeg",
+            caption="Lizzy Taking in the Wise Words of the Captain",
+            width=200
+        )
+        display_image(
+            "mtn.jpeg",
+            caption="The scenery was gorgeous, but the best view was next to Matt",
             width=200
         )
 
@@ -167,6 +180,26 @@ with Memories:
         display_image(
             'purdue.jpeg',
             caption='Mets Win with Lizzy in attendance: Wizzy',
+            width=200
+        )
+        display_image(
+            "camera.jpeg",
+            caption="LizBert celebrating Julia's birthday",
+            width =200
+        )
+        display_image(
+            "dippy.jpeg",
+            caption="I see Favoritism!",
+            width=200
+        )
+        display_image(
+            "camera.jpeg",
+            caption="The Group™️ice-staking",
+            width=200
+        )
+        display_image(
+            "ru.jpeg",
+            caption="The World's two Biggest MCU Fans!",
             width=200
         )
 
@@ -241,6 +274,16 @@ with Memories:
             caption='Lizzy (left) with Her Spirit Animal',
             width=200
         )
+        display_image(
+            "snowman.jpeg",
+            caption="An engineer at work (truly)",
+            width=200
+        )
+        display_image(
+            "walking.jpeg",
+            caption="An engaging walk on a rainy day",
+            width=200
+        )
 
 with Inside_Jokes:
     st.header("Unhinged Elizabeth Quotes")
@@ -248,99 +291,100 @@ with Inside_Jokes:
     SFW_Quotes, NSFW_Quotes = st.tabs(["SFW Quotes", "NSFW Quotes"])
 
     with SFW_Quotes:
-        st.markdown("- It sounds like a Cookie Monster Eating a Burger")
-        st.markdown("- I have a coughy every morning")
-        st.markdown("- Me!!!!! I'm the Feral Little Wolf")
-        st.markdown("- That's My Dead Rabbit, Bitches")
-        st.markdown("- I'm good at jumping. Its One of My Talents")
-        st.markdown("- You Missed the part in Barbie Where they Shoot the CEO")
-        st.markdown("- It’s a fine line between supporting the gays and holiday spirit ")
-        st.markdown("- I'm going to go with the bombing of cambodia")
-        st.markdown("- These are the gayest brownies this side of the Mississippi ")
-        st.markdown("- Pack the gun no grabbing buns")
-        st.markdown("- When I want to be in safe feminine space I go to the nfl")
-        st.markdown("- Wart girls lips taste like pepperoni ")
-        st.markdown("- You don’t know what a pond is")
+        
+        write_markdown("It sounds like a Cookie Monster Eating a Burger")
+        write_markdown("I have a coughy every morning")
+        write_markdown("Me!!!!! I'm the Feral Little Wolf")
+        write_markdown("That's My Dead Rabbit, Bitches")
+        write_markdown("I'm good at jumping. Its One of My Talents")
+        write_markdown("You Missed the part in Barbie Where they Shoot the CEO")
+        write_markdown("It’s a fine line between supporting the gays and holiday spirit ")
+        write_markdown("I'm going to go with the bombing of cambodia")
+        write_markdown("These are the gayest brownies this side of the Mississippi ")
+        write_markdown("Pack the gun no grabbing buns")
+        write_markdown("When I want to be in safe feminine space I go to the nfl")
+        write_markdown("Wart girls lips taste like pepperoni")
+        write_markdown("You don’t know what a pond is")
 
 
     with NSFW_Quotes:
-        st.markdown("- I'm really good at going down")
-        st.markdown("- I sucked your dck to this song. The song was 365")
-        st.markdown("- Now I understand why Rockets are so phallic")
-        st.markdown("- *While Kissing*: JOSHIE THE SCUMBUG")
-        st.markdown("- I wish they put stuff about penises on the AP Physics Test")
-        st.markdown("- You're Never Fully Dressed Without a boner")
-        st.markdown("- (Proudly) Im going to make Jello Penises")
-        st.markdown("- I feel like its the Lizzy Dick List (2x)")
-        st.markdown("- [Talking about Acme], the dick out discount")
-        st.markdown("- What do you want to do first: me or the Spinach balls?")
-        st.markdown("- I had to text my grandma so I couldn’t vote cum stain ")
-        st.markdown("- [In front of friends]:  I’m going to stick in my mouth")
-        st.markdown("- Do you have your penis (referred to as little Matt) write python code")
-        st.markdown("- Take it. It has chlamydia on it.")
-        st.markdown("- [impersonating The General from Insurance] I wanna fuck you so bad I’m so hard")
-        st.markdown("- You would want that Steve cohenussy")
-        st.markdown("- I have the dog in the bag with the condoms")
-        st.markdown("- He’s thrusting in reggaeton ")
-        st.markdown("- You can’t talk about penis then go right back to credit cards")
-        st.markdown("- I didn’t take you as a thong guy")
-        st.markdown("- Purdussy")
-        st.markdown("- Imagine your husband acts zesty in a soup porno")
-        st.markdown("- You don’t lactate")
-        st.markdown("- I did not just describe a boner in typescript")
-        st.markdown("- Wait until I describe it in rust. It would be a memory safe function")
-        st.markdown("- Having sex is embedded programming ")
-        st.markdown("- Imagine dating me bc im cute and boom wartboy-ussy")
-        st.markdown("- Wart girls lips taste like pepperoni")
-        st.markdown("- They’re all mech engineers. We tell them to fuck up some gears then we go fuck upstairs")
-        st.markdown("- He just stared at my boobs and then emailed the government of Alaska")
-        st.markdown("- My boobs are like bop-it")
-        st.markdown("- I don’t wanna work at Meta. I get mad dick")
-        st.markdown("- I used to like cookies more than sex. Then I started having good sex")
-        st.markdown("- I thought Denmark was made up in Shakespeare")
-        st.markdown("- Reverse cowgirl so I can work on my code")
-        st.markdown("- Can you send nut master to me")
-        st.markdown("- You want that Steve Jobsussy")
-        st.markdown("- You did not do “hot to go” about your erection")
-        st.markdown("- I wonder how much men are going to watch the Minecraft movie instead of getting any modicum of pussy")
-        st.markdown("- It’s a fine line between a boys hangout and public masturbation")
-        st.markdown("- We have black guys")
-        st.markdown("- It’s a Ben & Jerry’s flavor. Orgasm swirl")
-        st.markdown("- Bunny on my boobs")
-        st.markdown("- The gods of my period")
-        st.markdown("- I just want to be licked, topped, and loved")
-        st.markdown("- I need to get the screenshot of the porn book club")
-        st.markdown("- Pinky, turn around. Mommy’s having fun")
-        st.markdown("- What happens if you get pulled into the Spiderverse during sex")
-        st.markdown("- Now that I’ve seen Pete and his voluptuous ass, I'm going to sign up for bare tomorrow")
-        st.markdown("- They were fucking. There are dragons. What more could you want")
-        st.markdown("- Moomoo sex is sex that sponsors the Mets")
-        st.markdown("""Your abortion talk convinced me to go to Pilates tomorrow""")
-        st.markdown("""Locksmith roleplay""")
-        st.markdown("""Even bad bitches gotta take a poopy sometime""")
-        st.markdown("""Mozart said. Gobble me swallow me drip down the side of me""")
-        st.markdown("""I’m black""")
-        st.markdown("""Lindor’s bisexual""")
-        st.markdown("""We either need to peg harder or peg smarter""")
-        st.markdown("""Octopus in my pussy?""")
-        st.markdown("""Is the cow in the udder?""")
-        st.markdown("""Can we watch the sensory fruit video before sex""")
-        st.markdown("""There’s nothing less erotic than grilled cheese""")
-        st.markdown("""I can still pretend to be in the Klan if you want""")
-        st.markdown("""I want you to celebrate our anniversary by taking a shit in my toilet""")
-        st.markdown("""I got mad dick when I had LinkedIn premium""")
-        st.markdown("""(Talking about stuffies) I don’t want them to fuck""")
-        st.markdown("""Greater than or equal to you fucking bitch""")
-        st.markdown("""Good. You should be discriminated against""")
-        st.markdown("""I feel like a furry""")
-        st.markdown("""I want to be cumt ruffle’s grandmother""")
-        st.markdown("""I’m going to make Pearl Harbor look like the Boston tea party""")
-        st.markdown("""I’m sound tracking your piss""")
+        write_markdown("I'm really good at going down")
+        write_markdown("I sucked your dck to this song. The song was 365")
+        write_markdown("Now I understand why Rockets are so phallic")
+        write_markdown("*While Kissing*: JOSHIE THE SCUMBUG")
+        write_markdown("I wish they put stuff about penises on the AP Physics Test")
+        write_markdown("You're Never Fully Dressed Without a boner")
+        write_markdown("(Proudly) Im going to make Jello Penises")
+        write_markdown("I feel like its the Lizzy Dick List (2x)")
+        write_markdown("[Talking about Acme], the dick out discount")
+        write_markdown("What do you want to do first: me or the Spinach balls?")
+        write_markdown("I had to text my grandma so I couldn’t vote cum stain ")
+        write_markdown("[In front of friends]:  I’m going to stick in my mouth")
+        write_markdown("Do you have your penis (referred to as little Matt) write python code")
+        write_markdown("Take it. It has chlamydia on it.")
+        write_markdown("[impersonating The General from Insurance] I wanna fuck you so bad I’m so hard")
+        write_markdown("You would want that Steve cohenussy")
+        write_markdown("I have the dog in the bag with the condoms")
+        write_markdown("He’s thrusting in reggaeton ")
+        write_markdown("You can’t talk about penis then go right back to credit cards")
+        write_markdown("I didn’t take you as a thong guy")
+        write_markdown("Purdussy")
+        write_markdown("Imagine your husband acts zesty in a soup porno")
+        write_markdown("You don’t lactate")
+        write_markdown("I did not just describe a boner in typescript")
+        write_markdown("Wait until I describe it in rust. It would be a memory safe function")
+        write_markdown("Having sex is embedded programming ")
+        write_markdown("Imagine dating me bc im cute and boom wartboy ussy")
+        write_markdown("Wart girls lips taste like pepperoni")
+        write_markdown("They’re all mech engineers. We tell them to fuck up some gears then we go fuck upstairs")
+        write_markdown("He just stared at my boobs and then emailed the government of Alaska")
+        write_markdown("My boobs are like bop it")
+        write_markdown("I don’t wanna work at Meta. I get mad dick")
+        write_markdown("I used to like cookies more than sex. Then I started having good sex")
+        write_markdown("I thought Denmark was made up in Shakespeare")
+        write_markdown("Reverse cowgirl so I can work on my code")
+        write_markdown("Can you send nut master to me")
+        write_markdown("You want that Steve Jobsussy")
+        write_markdown("You did not do “hot to go” about your erection")
+        write_markdown("I wonder how much men are going to watch the Minecraft movie instead of getting any modicum of pussy")
+        write_markdown("It’s a fine line between a boys hangout and public masturbation")
+        write_markdown("We have black guys")
+        write_markdown("It’s a Ben & Jerry’s flavor. Orgasm swirl")
+        write_markdown("Bunny on my boobs")
+        write_markdown("The gods of my period")
+        write_markdown("I just want to be licked, topped, and loved")
+        write_markdown("I need to get the screenshot of the porn book club")
+        write_markdown("Pinky, turn around. Mommy’s having fun")
+        write_markdown("What happens if you get pulled into the Spiderverse during sex")
+        write_markdown("Now that I’ve seen Pete and his voluptuous ass, I'm going to sign up for bare tomorrow")
+        write_markdown("They were fucking. There are dragons. What more could you want")
+        write_markdown("Moomoo sex is sex that sponsors the Mets")
+        write_markdown("Your abortion talk convinced me to go to Pilates tomorrow")
+        write_markdown("Locksmith roleplay")
+        write_markdown("Even bad bitches gotta take a poopy sometime")
+        write_markdown("Mozart said. Gobble me swallow me drip down the side of me")
+        write_markdown("I’m black")
+        write_markdown("Lindor’s bisexual")
+        write_markdown("We either need to peg harder or peg smarter")
+        write_markdown("Octopus in my pussy?")
+        write_markdown("Is the cow in the udder?")
+        write_markdown("Can we watch the sensory fruit video before sex")
+        write_markdown("There’s nothing less erotic than grilled cheese")
+        write_markdown("I can still pretend to be in the Klan if you want")
+        write_markdown("I want you to celebrate our anniversary by taking a shit in my toilet")
+        write_markdown("I got mad dick when I had LinkedIn premium")
+        write_markdown("(Talking about stuffies) I don’t want them to fuck")
+        write_markdown("Greater than or equal to you fucking bitch")
+        write_markdown("Good. You should be discriminated against")
+        write_markdown("I feel like a furry")
+        write_markdown("I want to be cumt ruffle’s grandmother")
+        write_markdown("I’m going to make Pearl Harbor look like the Boston tea party")
+        write_markdown("I’m sound tracking your piss")
 
 with Happy_Birthday:
-    st.markdown('Happy Birthday, my darling')
-    st.markdown('https://youtube.com/shorts/FZELFihDJoA?feature=share')
+    write_markdown('Happy Birthday, my darling')
+    write_markdown('https://youtube.com/shorts/FZELFihDJoA?feature=share')
 
 with Merry_Xmas:
-    st.markdown('Happy Xmas!')
-    st.markdown('https://www.youtube.com/shorts/8jMfNlA2ukU')
+    write_markdown('Happy Xmas!')
+    write_markdown('https://www.youtube.com/shorts/8jMfNlA2ukU')
