@@ -6,8 +6,10 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 current_script_path = Path(__file__).resolve()
-image_folder = current_script_path.parent
-print(image_folder)
+parent_directory = current_script_path.parent
+from const import messages
+
+audio_folder = f"{parent_directory}/memos"
 
 st.set_page_config(page_icon="❤️", layout="centered", page_title="Merry Christmas")
 
@@ -19,7 +21,10 @@ container.write(
     "Lizzy, everyday I see you, that's my Pocketful of Happiness for the Day"
 )
 
-Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!"])
+Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas, Job = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!","First Day On the Job"])
+
+def return_audio(audio_file):
+    st.audio(f"{audio_folder}/{audio_file}")
 
 def display_image(file_path:str,caption:str,width:int):
     return st.image(f"images/{file_path}",caption,width)
@@ -388,3 +393,25 @@ with Happy_Birthday:
 with Merry_Xmas:
     write_markdown('Happy Xmas!')
     write_markdown('https://www.youtube.com/shorts/8jMfNlA2ukU')
+
+with Job:
+    audio_folder = f"{parent_directory}/memos"
+    file_names = [f for f in os.listdir(audio_folder) if os.path.isfile(os.path.join(audio_folder, f))]
+
+    stuffies_folder = f"{parent_directory}/images/stuffies"
+    stuffie_names = [f for f in os.listdir(stuffies_folder) if os.path.isfile(os.path.join(stuffies_folder, f))]
+
+    start =0
+
+    try:
+        for file in file_names:
+            images_list = [key for key in messages.keys() if "PNG" in key]
+            names = [value for value in messages.values()]
+
+            specific_image = images_list[start]
+
+            display_image(f"stuffies/{specific_image}", " ", 100)
+            return_audio(file)
+            start +=1
+    except IndexError:
+        st.write("")
