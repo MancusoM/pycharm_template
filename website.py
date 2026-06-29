@@ -21,7 +21,7 @@ container.write(
     "Lizzy, everyday I see you, that's my Pocketful of Happiness for the Day"
 )
 
-Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas, Job = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!","First Day On the Job"])
+Memories, Inside_Jokes,Happy_Birthday,Merry_Xmas, Job, purdue = st.tabs(["Memories", "Inside Jokes",'Happy Birthday',"Merry Christmas!","First Day On the Job", "Felix Cumpleaños!"])
 
 def return_audio(audio_file):
     st.audio(f"{audio_folder}/{audio_file}")
@@ -121,6 +121,16 @@ with Memories:
             caption="The scenery was gorgeous, but the best view was next to Matt",
             width=200
         )
+        display_image(
+            "allan.jpg",
+            caption="Lizzy's Favorite Man?",
+            width=200
+        )
+        display_image(
+            "pigeon.jpeg",
+            caption="Big-Ass pigeon",
+            width=200
+        )
 
     with col2:
         display_image(
@@ -203,8 +213,13 @@ with Memories:
             width=200
         )
         display_image(
-            "ru.jpeg",
-            caption="The World's two Biggest MCU Fans!",
+            "nyc.jpg",
+            caption="This is all Manhattan?",
+            width=200
+        )
+        display_image(
+            "maryland.jpg",
+            caption="Go Purdue! Don't Go Amtrak!",
             width=200
         )
 
@@ -287,6 +302,16 @@ with Memories:
         display_image(
             "walking.jpeg",
             caption="An engaging walk on a rainy day",
+            width=200
+        )
+        display_image(
+            "toronto.jpg",
+            caption="A great vacation in Toronto",
+            width=200
+        )
+        display_image(
+            "puppy.jpg",
+            caption="Puppy soon :) ",
             width=200
         )
 
@@ -415,3 +440,6 @@ with Job:
             start +=1
     except IndexError:
         st.write("")
+with purdue:
+    write_markdown('Happy Birthday, my dear')
+    write_markdown('')
