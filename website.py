@@ -290,7 +290,6 @@ with Memories:
             width=200
         )
 
-
 with Inside_Jokes:
     st.header("Unhinged Elizabeth Quotes")
     st.write("RIP Compliance Cow")
@@ -398,7 +397,6 @@ with Merry_Xmas:
 with Job:
     audio_folder = f"{parent_directory}/memos"
     file_names = [f for f in os.listdir(audio_folder) if os.path.isfile(os.path.join(audio_folder, f))]
-
 
     stuffies_folder = f"{parent_directory}/images/stuffies"
     stuffie_names = [f for f in os.listdir(stuffies_folder) if os.path.isfile(os.path.join(stuffies_folder, f))]
