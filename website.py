@@ -217,11 +217,11 @@ with Memories:
             #caption="This is all Manhattan?",
             #width=200
         #)
-        display_image(
-            "maryland.jpg",
-            caption="Go Purdue! Don't Go Amtrak!",
-            width=200
-        )
+        #display_image(
+            #maryland.jpg",
+            #caption="Go Purdue! Don't Go Amtrak!",
+            #width=200
+        #)
 
     with col3:
         display_image(
