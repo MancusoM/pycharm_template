@@ -309,11 +309,11 @@ with Memories:
             caption="A great vacation in Toronto",
             width=200
         )
-        display_image(
-            "puppy.jpg",
-            caption="Puppy soon :) ",
-            width=200
-        )
+        #display_image(
+            #puppy.jpg",
+            #caption="Puppy soon :) ",
+            #width=200
+        #)
 
 with Inside_Jokes:
     st.header("Unhinged Elizabeth Quotes")
