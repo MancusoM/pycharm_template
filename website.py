@@ -212,11 +212,11 @@ with Memories:
             caption="The Group™️ice-staking",
             width=200
         )
-        display_image(
-            "nyc.jpg",
-            caption="This is all Manhattan?",
-            width=200
-        )
+        #display_image(
+            #nyc.jpg",
+            #caption="This is all Manhattan?",
+            #width=200
+        #)
         display_image(
             "maryland.jpg",
             caption="Go Purdue! Don't Go Amtrak!",
